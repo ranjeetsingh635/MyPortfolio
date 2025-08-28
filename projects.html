@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ranjeet Singh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .projects-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+        
+        .projects-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .projects-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .project-detail {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            overflow: hidden;
+        }
+        
+        .project-header {
+            background: linear-gradient(45deg, #2563eb, #7c3aed);
+            color: white;
+            padding: 2rem;
+        }
+        
+        .project-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-meta span {
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .project-body {
+            padding: 2rem;
+        }
+        
+        .project-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            color: #4b5563;
+        }
+        
+        .project-features {
+            margin-bottom: 2rem;
+        }
+        
+        .project-features h4 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .project-features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .project-features li {
+            padding: 0.5rem 0;
+            color: #6b7280;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .project-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .tech-item {
+            background: #f3f4f6;
+            color: #374151;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .project-btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-github {
+            background: #24292e;
+            color: white;
+        }
+        
+        .btn-github:hover {
+            background: #1a1e22;
+        }
+        
+        .btn-demo {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .btn-demo:hover {
+            background: #1d4ed8;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        
+        .back-link:hover {
+            color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Ranjeet Singh</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Explore my DevOps projects showcasing automation, infrastructure management, and modern deployment practices</p>
+        </div>
+    </section>
+
+    <!-- Projects Details -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+
+            <!-- Project 1 -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <h3>CI/CD Pipeline Implementation</h3>
+                    <div class="project-meta">
+                        <span><i class="fas fa-calendar"></i> 2023</span>
+                        <span><i class="fas fa-clock"></i> 3 months</span>
+                        <span><i class="fas fa-users"></i> Team of 4</span>
+                    </div>
+                    <p>Enterprise-grade CI/CD pipeline for multi-technology stack applications</p>
+                </div>
+                <div class="project-body">
+                    <div class="project-description">
+                        Designed and implemented a comprehensive Jenkins-based CI/CD pipeline that supports multiple application types including Node.js, React, Java, and Django applications. The pipeline integrates automated testing, code quality checks, security scanning, and deployment automation across multiple environments.
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Key Features & Achievements</h4>
+                        <ul>
+                            <li>Automated build, test, and deployment processes for 15+ microservices</li>
+                            <li>Integrated SonarQube for code quality analysis and technical debt management</li>
+                            <li>Implemented automated security scanning with OWASP dependency checks</li>
+                            <li>Set up automated notifications via Email and Slack for build status</li>
+                            <li>Reduced deployment time from 2 hours to 15 minutes</li>
+                            <li>Achieved 99.5% deployment success rate</li>
+                            <li>Implemented blue-green deployment strategy for zero-downtime releases</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-item">Jenkins</span>
+                        <span class="tech-item">GitLab CI</span>
+                        <span class="tech-item">SonarQube</span>
+                        <span class="tech-item">Docker</span>
+                        <span class="tech-item">Kubernetes</span>
+                        <span class="tech-item">GitHub</span>
+                        <span class="tech-item">Slack API</span>
+                        <span class="tech-item">OWASP</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-btn btn-github">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-btn btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <h3>Infrastructure Automation with Terraform</h3>
+                    <div class="project-meta">
+                        <span><i class="fas fa-calendar"></i> 2023</span>
+                        <span><i class="fas fa-clock"></i> 2 months</span>
+                        <span><i class="fas fa-users"></i> Solo Project</span>
+                    </div>
+                    <p>Complete infrastructure automation for multi-tier cloud applications</p>
+                </div>
+                <div class="project-body">
+                    <div class="project-description">
+                        Developed a comprehensive Infrastructure as Code (IaC) solution using Terraform to automate the provisioning and management of cloud infrastructure for a multi-tier web application. The project includes automated server configuration using Ansible playbooks for consistent and repeatable deployments.
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Key Features & Achievements</h4>
+                        <ul>
+                            <li>Automated provisioning of VPC, subnets, security groups, and load balancers</li>
+                            <li>Implemented auto-scaling groups for high availability and cost optimization</li>
+                            <li>Created reusable Terraform modules for different environments</li>
+                            <li>Configured Ansible playbooks for application deployment and configuration</li>
+                            <li>Reduced infrastructure setup time from days to minutes</li>
+                            <li>Achieved 80% reduction in manual configuration errors</li>
+                            <li>Implemented infrastructure versioning and rollback capabilities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-item">Terraform</span>
+                        <span class="tech-item">Ansible</span>
+                        <span class="tech-item">AWS</span>
+                        <span class="tech-item">EC2</span>
+                        <span class="tech-item">VPC</span>
+                        <span class="tech-item">ALB</span>
+                        <span class="tech-item">RDS</span>
+                        <span class="tech-item">S3</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-btn btn-github">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-btn btn-demo">
+                            <i class="fas fa-chart-line"></i>
+                            Architecture
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <h3>Comprehensive Monitoring & Observability</h3>
+                    <div class="project-meta">
+                        <span><i class="fas fa-calendar"></i> 2023</span>
+                        <span><i class="fas fa-clock"></i> 6 weeks</span>
+                        <span><i class="fas fa-users"></i> Team of 3</span>
+                    </div>
+                    <p>Enterprise monitoring solution with custom dashboards and alerting</p>
+                </div>
+                <div class="project-body">
+                    <div class="project-description">
+                        Implemented a centralized monitoring and observability platform using Prometheus and Grafana to provide comprehensive insights into application performance, infrastructure health, and business metrics. The solution includes custom alerting rules and automated incident response workflows.
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Key Features & Achievements</h4>
+                        <ul>
+                            <li>Deployed Prometheus for metrics collection from 50+ endpoints</li>
+                            <li>Created 20+ custom Grafana dashboards for different stakeholders</li>
+                            <li>Implemented AlertManager for intelligent alert routing and grouping</li>
+                            <li>Set up log aggregation using ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                            <li>Reduced mean time to detection (MTTD) by 70%</li>
+                            <li>Decreased incident response time by 50%</li>
+                            <li>Achieved 99.9% monitoring system uptime</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-item">Prometheus</span>
+                        <span class="tech-item">Grafana</span>
+                        <span class="tech-item">AlertManager</span>
+                        <span class="tech-item">Elasticsearch</span>
+                        <span class="tech-item">Logstash</span>
+                        <span class="tech-item">Kibana</span>
+                        <span class="tech-item">Node Exporter</span>
+                        <span class="tech-item">Blackbox Exporter</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-btn btn-github">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-btn btn-demo">
+                            <i class="fas fa-chart-area"></i>
+                            Dashboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <h3>Kubernetes Container Orchestration</h3>
+                    <div class="project-meta">
+                        <span><i class="fas fa-calendar"></i> 2024</span>
+                        <span><i class="fas fa-clock"></i> 4 months</span>
+                        <span><i class="fas fa-users"></i> Team of 5</span>
+                    </div>
+                    <p>Migration of legacy applications to containerized microservices architecture</p>
+                </div>
+                <div class="project-body">
+                    <div class="project-description">
+                        Led the migration of monolithic legacy applications to a containerized microservices architecture using Docker and Kubernetes. The project involved containerizing applications, setting up Kubernetes clusters, implementing service mesh, and establishing automated deployment pipelines.
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Key Features & Achievements</h4>
+                        <ul>
+                            <li>Containerized 12 legacy applications using Docker</li>
+                            <li>Set up production-ready Kubernetes clusters with high availability</li>
+                            <li>Implemented Helm charts for application package management</li>
+                            <li>Configured Ingress controllers for traffic routing and SSL termination</li>
+                            <li>Reduced application downtime by 40%</li>
+                            <li>Improved deployment speed by 25%</li>
+                            <li>Achieved horizontal auto-scaling based on CPU and memory metrics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-item">Docker</span>
+                        <span class="tech-item">Kubernetes</span>
+                        <span class="tech-item">Helm</span>
+                        <span class="tech-item">Ingress</span>
+                        <span class="tech-item">Istio</span>
+                        <span class="tech-item">Harbor</span>
+                        <span class="tech-item">Kustomize</span>
+                        <span class="tech-item">ArgoCD</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-btn btn-github">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-btn btn-demo">
+                            <i class="fas fa-cube"></i>
+                            Architecture
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Ranjeet Singh. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/ranjeet-singh-830b08b1/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ranjeetsingh" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:ranjeetsingh635@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
