@@ -100,6 +100,7 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 .hero::before {
@@ -273,6 +274,7 @@ body {
 /* Section Styles */
 section {
     padding: 5rem 0;
+    scroll-margin-top: 80px;
 }
 
 .section-title {
@@ -299,6 +301,10 @@ section {
 /* About Section */
 .about {
     background: #f9fafb;
+    padding: 8rem 0;
+    margin-top: 0;
+    position: relative;
+    z-index: 10;
 }
 
 .about-content {
